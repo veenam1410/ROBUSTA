@@ -1,0 +1,728 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: #EEEDEB;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #402218;
+    position: sticky;
+    margin-top: 0px;
+    top: 0;
+    z-index: 100;
+}
+.right-nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 70px;
+    margin-left: 40px;
+}
+.logo h3{
+    color: #D7B19D;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: #D7B19D;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 20px;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+.user img{
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-right: 40px;
+    outline: 0;
+    cursor: pointer;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    margin-right: 40px;
+    padding: 5px;
+}
+.search-bar input{
+    font-size: 14px;
+    padding: 7px 0;
+    border: 0;
+    outline: 0;
+    width: 350px;
+    background: transparent;
+}
+.search-bar i{
+    color: #522a19;
+    margin: 0 10px;
+}
+.banner{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(images/final-banner.png);
+    background-size: cover;
+    height: 270px;
+    width: 100%;
+}
+.h2head{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #402218;
+    font-weight: 800;
+}
+.recommendations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5px 10px 5px;
+    
+}
+.rec{
+    display: flex;
+    /* align-items: center; */
+    background: #402218eb;
+    height: 250px;
+    width: 24.5%;
+    border-radius: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.35);
+}
+.rec-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C68B59;
+    height: 120px;
+    width: 120px;
+    margin-top: 30px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+.rec-img{
+    background-size: cover;
+    background-position: center;
+}
+.rec-text{
+    margin-top: 45px;
+}
+.rec-text h3{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.555);
+}
+.rec-text p{
+    margin-left: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #D7B19D;
+}
+.rec1{
+    background-image: url(images/cuppacino.jpg);
+}
+.rec2{
+    background-image: url(images/americano.jpg);
+}
+.rec3{
+    background-image: url(images/lattef.jpg);
+}
+.rec4{
+    background-image: url(images/choco.jpg);
+}
+.price{
+    margin-left: 55px;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.726);
+    font-weight: 200;
+    font-size: 14px;
+}
+.button1{
+    width: 100px;
+    height: 30px;
+    margin-left: 110px;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    box-shadow: 2px 2px 10px rgba(236, 232, 232, 0.3);
+}
+h2{
+    margin-top: 45px;
+    text-align: center;
+    color: #402218;
+    font-weight: 800;
+}
+.descriptions{
+    padding: 20px 125px;
+}
+.descriptions p{
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: #522a19d4;
+}
+.footer{
+    background: transparent;
+    margin-top: 10px;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.social-media h3{
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    color: #402218;
+    font-weight: 800;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+.icons i{
+    margin-right: 15px;
+}
+.icons a{
+    text-decoration: none;
+    color: #402218;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.items p{
+    margin-left: 25px;
+    font-size: 14px;
+    color: #402218;
+}
+.items a{
+    text-decoration: none;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #402218;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.userinfo{
+    position: absolute;
+    width: 90%;
+    max-width: 250px;
+    /* height: auto; */
+    background: #EEEDEB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top: 108%;
+    right: 0.5%;
+    max-height: 0;
+    transition: max-height 0.3s;
+}
+.userinfo-height{
+    max-height: 450px;
+}
+.userdetails{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 10px 15px;
+}
+.lists{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.lists p{
+    margin-left: 15px;
+}
+.lists a{
+    margin-right: 10px;
+    color: #402218;
+}
+.lists a i{
+    margin-right: 5px;
+}
+.btnlog{
+    background: #402218;
+    height: 35px;
+    width: 80px;
+    margin: 0 33%;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* .dark-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ccc;
+    width: 35px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+}
+.togglebtn {
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dark-btn-on{
+    margin-left: 17px;
+    background: black;
+    transition: padding-left 0.5s, background 0.5s;
+} */
+
+
+/* STYLES FOR MENU PAGE */
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* .select-mode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 700px;
+}
+.select-mode a{
+    text-decoration: none;
+    color: #402218;
+}
+.select-mode p{
+    margin-left: 10px;
+} */
+/* .dinein{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #402218;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    font-size: 12px;
+}
+.takeaway{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #402218;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    font-size: 12px;
+} */
+/* .options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+} */
+/* .new{
+    margin-left: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.new a{
+    text-decoration: none;
+}
+.bestseller{
+    margin-left: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.drinks{
+    margin-left: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.products{
+    margin-left: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.para p{
+    font-size: 14px;
+    color: #402218;
+} */
+
+.drinksshow{
+    width: 99%;
+    height: auto;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); */
+    background: transparent;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.rec-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    height: 280px;
+    width: 280px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 2px;
+    flex-wrap: wrap;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); */
+}
+.rec-item-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C68B59;
+    height: 120px;
+    width: 120px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+.rec-item-img{
+    background-size: cover;
+    background-position: center;
+
+}
+.rec-item-text{
+    margin-top: 5px;
+}
+.rec-item-text h3{
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #402218;
+}
+.rec-item-text p{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #402218b7;
+    line-height: 15px;
+}
+.rec-item1{
+    background-image: url(images/cuppacino.jpg);
+}
+.rec-item2{
+    background-image: url(images/americano.jpg);
+}
+.rec-item3{
+    background-image: url(images/lattef.jpg);
+}
+.rec-item4{
+    background-image: url(images/choco.jpg);
+}
+.rec-item5{
+    background-image: url(images/doppio.jpg);
+}
+.rec-item6{
+    background-image: url(images/flatwhite.jpg);
+}
+.rec-item7{
+    background-image: url(images/macchiato.jpg);
+}
+.rec-item8{
+    background-image: url(images/filterc.jpg);
+}
+.rec-item9{
+    background-image: url(images/mocha.jpg);
+}
+.rec-item10{
+    background-image: url(images/french.jpg);
+}
+.rec-item11{
+    background-image: url(images/coldbrew.jpg);
+}
+.rec-item12{
+    background-image: url(images/icedlatte.jpg);
+}
+.rec-item13{
+    background-image: url(images/icedamericano.png);
+}
+.rec-item14{
+    background-image: url(images/Frappe.jpg);
+}
+.rec-item15{
+    background-image: url(images/Affogato.jpg);
+}
+.rec-item16{
+    background-image: url(images/Cortado.jpg);
+}
+.rec-item17{
+    background-image: url(images/PourOver.jpg);
+}
+.rec-item18{
+    background-image: url(images/DripCoffee.jpg);
+}
+.rec-item19{
+    background-image: url(images/MokaPot.jpg);
+}
+.rec-item20{
+    background-image: url(images/ChocoRobusta.jpg);
+}
+.price-item{
+    margin-top: 20px;
+    color: #402218;
+    font-weight: 200;
+    font-size: 14px;
+}
+.button2{
+    width: 100px;
+    height: 30px;
+    background: #402218;
+    color: white;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    box-shadow: 2px 2px 10px rgba(236, 232, 232, 0.3);
+}
+
+
+/* Styles for offers page */
+
+/* .offeroptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    background: #D7B19D; 
+}*/
+/* .onlineoffers a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: #402218;
+    font-weight: 800;
+
+}
+.line{
+    height: 25px;
+    width: 1px;
+    background: #402218;
+}
+.dineinoffers a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #402218;
+    font-weight: 800;
+    
+}  */
+.dailyoffers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    background: transparent;
+}
+.dailyitem{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    height: 300px;
+    width: 20%;
+    border-radius: 15px;
+    margin: 10px 10PX;
+    /* flex-wrap: wrap;  */
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); */
+}
+.daily-item{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.maintext {
+    color: rgba(255, 255, 255, 0.808);
+    font-weight: 800;
+    font-size: 16px;
+    text-align: start;
+    margin-top: 220px;
+    margin-left: 15px;
+}
+.subtext{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.418);
+    margin-left: 15px;
+    margin-top: 5px;
+    text-align: start;
+    line-height: 15px;
+}
+.daily-item1{
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.85)), url(images/OFFE1.png);
+}
+.daily-item2{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.85)), url(images/OFFE6.jpg);
+}
+.daily-item3{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.85)), url(images/OFFE3.png);
+}
+.daily-item4{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.85)), url(images/OFFE7.jpg);
+}
+.daily-item5{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.85)), url(images/OFFE5.png);
+}
+.daily-item6{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.85)), url(images/OFFE2.png);
+}
+.daily-item7{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.85)), url(images/OFFE9.jpg);
+}
+.daily-item8{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.85)), url(images/OFFE8.jpg);
+}
+.banner1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* margin-bottom: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/BANNER2.png);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 80%;
+    border-radius: 30px;
+}
+
+
+/* Styles for store page */
+
+.stores{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: transparent;
+    margin: 20px 60px;
+}
+.storeslist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    flex-basis: 32%;
+    height: 400px;
+    margin: 10px 0 ;
+    border-radius: 20px;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35); */
+}
+.eachstore{
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+}
+.store1{
+    background-image: url(images/store1.jpg);
+}
+.store2{
+    background-image: url(images/store2.jpg);
+}
+.store3{
+    background-image: url(images/store3.jpg);
+}
+.store4{
+    background-image: url(images/store4.jpg);
+}
+.store5{
+    background-image: url(images/store5.jpg);
+}
+.store6{
+    background-image: url(images/store6.jpg);
+}
+.storeslist H3{
+    margin-top: 5PX;
+    text-align: center;
+    font-weight: 800;
+}
+.button3{
+    width: 50%;
+    margin-top: 10px;
+    height: 40px;
+    background-color: #402218;
+    color: white;
+    margin-bottom: 13px;
+    font-size: 14px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+
+}

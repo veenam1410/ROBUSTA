@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robusta-Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/906faa9c3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="right-nav">
+            <div class="logo">
+                <img src="images/flogo.png" alt="Robusta logo">
+                <h3>ROBUSTA</h3>
+            </div>
+            <div class="nav-list">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="offers.html">Offers</a>
+                <!-- <a href="#">Order</a> -->
+                <a href="STORE.HTML">Store</a>
+            </div>
+        </div>
+        
+        <div class="left-nav">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search Your Favorites">
+            </div>
+
+            <div class="user" onclick="userDetailsToggle()">
+                <img src="images/user.jpg" alt="User Profile Pic">
+            </div>
+
+            <!-- <div class="dark-btn">
+                <span class="togglebtn" onclick="toggleBtn()"></span>
+            </div> -->
+        </div>
+        
+        <div class="userinfo">
+
+            <div class="userdetails">
+                <div class="account lists">
+                    <a href="#"><i class="fa-solid fa-user fa-2x"></i></a>
+                    <p>Account</p>
+                </div>
+
+                <div class="orderhistory lists">
+                    <a href="#"><i class="fa-solid fa-rectangle-list fa-2x"></i></a>
+                    <p>Oders History</p>
+                </div>
+
+                <div class="rewards lists">
+                    <a href="#"><i class="fa-solid fa-star fa-2x"></i></a>
+                    <p>Rewards</p>
+                </div>
+
+                <div class="settings lists">
+                    <a href="#"><i class="fa-solid fa-gear fa-2x"></i></a>
+                    <p>Settings</p>
+                </div>
+
+                <button type="button" class="btnlog">Logout</button>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="menu">
+        <!-- <div class="options">
+
+            <div class="new para">
+                <p>New</p>
+            </div>
+
+            <div class="bestseller para">
+                <p>Bestseller</p>
+            </div>
+
+            <div class="drinks para">
+                <p>Drinks</p>
+            </div>
+
+            <div class="products para">
+                <p>Products</p>
+            </div>
+
+            <div class="select-mode">
+                <div class="dinein">
+                    <a href="#"><i class="fa-solid fa-store fa-2x"></i></a>
+                    <a href="#"><p>Dine-in</p></a>
+                </div>
+                <div class="takeaway">
+                    <a href="#"><i class="fa-solid fa-person-walking-arrow-right fa-2x"></i></a>
+                    <a href="#"><p>Takeaway</p></a>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="drinksshow">
+                <!-- <div class="drinks-inner"> -->
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item1">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Cuppaccino</h3>
+                            <p>Creamy espresso topped with steamed milk and foamed milk.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 150.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item2">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Americano</h3>
+                            <p>A strong espresso shot diluted with hot water for a smooth finish.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 130.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item3">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Latte</h3>
+                            <p>Smooth blend of espresso and steamed milk with a light layer of foam.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 150.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item4">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Espresso</h3>
+                            <p>A bold and concentrated shot of pure coffee.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 110.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item5">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Doppio</h3>
+                            <p>A double shot of espresso for a deeper, richer experience.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 130.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item6">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Flat White</h3>
+                            <p>Silky microfoam poured over a double espresso shot.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 160.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item7">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Macchiato</h3>
+                            <p>Espresso stained with a dollop of milk foam.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 120.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item8">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Filter Coffee</h3>
+                            <p>South Indian-style coffee brewed using a metal filter.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 100.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item9">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Mocha</h3>
+                            <p>A delightful mix of espresso, chocolate, and steamed milk.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 160.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item10">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>French Press</h3>
+                            <p>Coarsely ground coffee steeped and pressed for a full-bodied flavor.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 140.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item11">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Cold Brew</h3>
+                            <p>Smooth, low-acidity coffee brewed slowly in cold water.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 170.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item12">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Iced Latte </h3>
+                            <p>Chilled espresso combined with cold milk and ice.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 150.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item13">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Iced Americano</h3>
+                            <p>Espresso poured over cold water and ice for a crisp kick.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 140.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item14">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Frappe</h3>
+                            <p>Blended iced coffee with milk and optional flavors or whipped cream.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 160.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item15">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Affogato</h3>
+                            <p>A scoop of vanilla ice cream drowned in a hot espresso shot.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 180.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item16">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Cortado</h3>
+                            <p>Equal parts espresso and steamed milk for a bold yet smooth cup.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 140.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item17">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Pour Over</h3>
+                            <p>Hand-brewed coffee with precision for clean, rich flavors.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 130.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item18">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Drip Coffee</h3>
+                            <p>Classic slow-brewed coffee with a balanced taste.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 110.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item19">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>Moka Pot</h3>
+                            <p>Stovetop espresso-style coffee with a strong, rich aroma.	</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 120.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+
+                    <div class="rec-item">
+                        <div class="rec-item-img rec-item20">
+                            <!-- <img src="images/cuppacino.jpg" alt="cuppacino"> -->
+                        </div>
+                        <div class="rec-item-text">
+                            <h3>ChocoRobusta</h3>
+                            <p>Signature fusion of rich chocolate and robusta espresso.</p>
+                        </div>
+                        <div class="price-item">
+                            <p><i class="fa-solid fa-indian-rupee-sign"></i> 170.00</p>
+                        </div>
+                        <button type="button" class="button2">Add Item</button>
+                    </div>
+                <!-- </div> -->
+        </div>
+   
+        <!-- </div> -->
+    </div>
+   
+    <div class="footer">
+        <div class="social-media">
+            <h3>Find Us On</h3>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-instagram fa-1x"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-1x"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter fa-1x"></i></a>
+            </div>
+        </div>
+
+        <div class="items">
+            <a href="#"><p>About Us</p></a>
+            <a href="#"><p>Privacy Statement</p></a>
+            <a href="#"><p>Terms & Conditions</p></a>
+            <a href="#"><p>Contact Us</p></a>
+            <a href="#"><p>Feedback</p></a>
+        </div>
+
+        <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i> 2025 Robusta Coffe Company. All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script src="scrpit.js"></script>
+</body>
+</html>
